@@ -1,6 +1,6 @@
-import express from "express";
-import graphqlHTTP from "express-graphql";
-import schema from "./schema";
+const express = require("express");
+const graphqlHTTP = require("express-graphql");
+const schema = require("./schema");
 
 const app = express();
 
@@ -11,6 +11,8 @@ app.use(
     graphiql: true
   })
 );
+
+app.use(express.static("public"));
 
 const PORT = process.env.PORT || 5000;
 
