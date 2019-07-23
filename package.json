@@ -1,0 +1,31 @@
+{
+  "name": "spacex_launch_status",
+  "version": "1.0.0",
+  "description": "\"App that lists SpaceX launch Missions",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelucidrealist/SpaxeX-Launch-Status.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelucidrealist/SpaxeX-Launch-Status/issues"
+  },
+  "homepage": "https://github.com/thelucidrealist/SpaxeX-Launch-Status#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2",
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
