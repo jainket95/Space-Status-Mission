@@ -10,16 +10,8 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thelucidrealist/SpaxeX-Launch-Status.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thelucidrealist/SpaxeX-Launch-Status/issues"
-  },
-  "homepage": "https://github.com/thelucidrealist/SpaxeX-Launch-Status#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "concurrently": "^4.1.1",
