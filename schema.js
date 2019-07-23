@@ -1,12 +1,11 @@
-const {
+import {
   GraphQLObjectType,
   GraphQLBoolean,
   GraphQLInt,
   GraphQLString,
   GraphQLList,
   GraphQLSchema
-} = require("graphql");
-
+} from "graphql";
 
 const axios = require("axios");
 
@@ -41,15 +40,15 @@ const RootQuery = new GraphQLObjectType({
   fields: {
     launches: {
       type: new GraphQLList(LaunchType),
-      resolve(parents, args) {
-        return axios.get("https://api.spacexdata.com/v3/launches")
-        .then(res = res.data);
+      resolve(parent, args) {
+        return axios
+          .get("https://api.spacexdata.com/v3/launches")
+          .then(res => res.data);
       }
     }
   }
 });
 
-
 module.exports = new GraphQLSchema({
   query: RootQuery
-})
+});
